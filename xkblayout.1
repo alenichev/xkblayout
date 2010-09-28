@@ -1,0 +1,58 @@
+.\"	$Surreal: xkblayout.1,v 1.4 2010/03/05 08:23:31 mitya Exp $
+.\"
+.\" Copyright (c) 2008, 2009 Dmitry Alenichev <mitya@sdf.lonestar.org>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: July 9 2009 $
+.Dt XKBLAYOUT 1
+.Os
+.Sh NAME
+.Nm xkblayout
+.Nd display current xkb keyboard layout
+.Sh SYNOPSIS
+.Nm xkblayout
+.Op Fl d Ar display
+.Op Fl l
+.Sh DESCRIPTION
+.Pp
+.Nm
+is a utility that prints the current xkb keyboard layout.
+.Pp
+The options for
+.Nm
+are as follows:
+.Bl -tag -width Ds
+.It Fl d Ar display
+Specify the display to use.
+.It Fl l
+Long format. Prints full xkb keyboard layout string.
+.El
+.Sh ENVIRONMENT
+.Bl -tag -width "DISPLAYXXX"
+.It Ev DISPLAY
+.Nm
+use this display unless the
+.Fl d
+option is given.
+.El
+.Sh HISTORY
+The
+.Nm
+utility was developed on OpenBSD 4.4.
+.Sh AUTHORS
+The
+.Nm
+utility was written by
+.An Dmitry Alenichev
+.Aq mitya@sdf.lonestar.org .
