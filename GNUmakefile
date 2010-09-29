@@ -11,7 +11,7 @@ OBJS=		$(SRCS:.c=.o)
 all:		xkblayout
 
 xkblayout:	$(OBJS)
-	$(CC) -o xkblayout $(OBJS) $(LDADD)
+	$(CC) $(CFLAGS) -o xkblayout $(OBJS) $(LDADD)
 
 clean cleandir:
 	rm -f *.o xkblayout *.core core
