@@ -124,10 +124,7 @@ print_layout(int group, int long_format)
 	if (long_format)
 		(void)printf("%s\n", layout);
 	else {
-		if (layout[2] == '/')
-			(void)printf("%.2s\n", layout);
-		else
-			(void)printf("%.3s\n", layout);
+		(void)printf("%.2s\n", layout);
 	}
 }
 
